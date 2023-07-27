@@ -1,0 +1,27 @@
+<% layout('layouts/styleTemplate')%>
+<div class="p-3 mb-2 bg-primary text-white">
+  <h1>Login Please</h1>
+  <form action="/login" method="post" novalidate class="validate">
+    <div class="mb-3">
+      <label class="form-label" for="username">User Name</label>
+      <input
+        class="form-control"
+        type="text"
+        name="username"
+        id="username"
+        required
+      />
+    </div>
+    <div class="mb-3">
+      <label class="form-label" for="password">Password</label>
+      <input
+        class="form-control"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
+    </div>
+    <button class="btn btn-success">submit</button>
+  </form>
+</div>

@@ -1,0 +1,29 @@
+<% layout('layouts/styleTemplate')%>
+<h1>Register</h1>
+<form action="/register" method="post" novalidate class="validate">
+  <div class="mb-3">
+    <label class="form-label" for="username">User Name</label>
+    <input
+      class="form-control"
+      type="text"
+      name="username"
+      id="username"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="email">Email Address</label>
+    <input class="form-control" type="email" name="email" id="email" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="password">Password</label>
+    <input
+      class="form-control"
+      type="password"
+      name="password"
+      id="password"
+      required
+    />
+  </div>
+  <button class="btn btn-success">submit</button>
+</form>
